@@ -23,6 +23,9 @@ RUN swift build -c release
 RUN cp "$(swift build --package-path . -c release --show-bin-path)/sync-command" ./bin/sync-command
 RUN cp "$(swift build --package-path . -c release --show-bin-path)/arguments-1" ./bin/arguments-1
 RUN cp "$(swift build --package-path . -c release --show-bin-path)/arguments-2" ./bin/arguments-2
+RUN cp "$(swift build --package-path . -c release --show-bin-path)/flags-1" ./bin/flags-1
+RUN cp "$(swift build --package-path . -c release --show-bin-path)/flags-2" ./bin/flags-2
+RUN cp "$(swift build --package-path . -c release --show-bin-path)/flags-3" ./bin/flags-3
 RUN cp "$(swift build --package-path . -c release --show-bin-path)/subcommands" ./bin/subcommands
 
 # WORKDIR /libswift
